@@ -1,0 +1,336 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content%}
+
+  
+<form style="color:white;" align="center" method="POST">
+  <h1>Learn about and select muscle groups to build!</h1>
+  
+
+<div style="color:white;" class="box">
+	
+    <br>
+    <div class="container">
+     	<div class="row">
+			 
+			    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+					<div class="box-part text-center">
+                        
+                        <img src="https://cdn.prod.openfit.com/uploads/2020/01/08203334/calves-anatomy.jpg"
+                        width="350"
+                        height="280">
+                        
+						<div class="title">
+							<h4>Calves</h4>
+						</div>
+                        
+						<div class="text">
+							<span span style= "background-color: rgba(17, 13, 16, 0.63);">Your calves help bend your knees and are responsible for lifting the heel, a movement called plantar flexion. They also control the opposite movement, dorsiflexion, while they're elongated.</span>
+						</div>
+                        <br>
+						<br>
+						<input type="checkbox" id="calves" name="calves" value="Calves">
+                        <label span style= "background-color: rgba(17, 13, 16, 0.63);" for="calves"> Select Muscle Group</label><br>
+                        <br>
+                        <br>
+                        
+					 </div>
+				</div>	 
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+					<div class="box-part text-center">
+                        
+                        <img src="https://images.squarespace-cdn.com/content/5652f717e4b0070eb05c2f63/1601601741206-SCEQ7WQ8QC4PZHG3DFAS/Quad+stretches+For+Seniors?content-type=image%2Fpng"
+                        width="350"
+                        height="280">
+                        
+						<div class="title">
+							<h4>Quadriceps</h4>
+						</div>
+                        
+						<div class="text">
+							<span span style= "background-color: rgba(17, 13, 16, 0.63);">The quadriceps are made up of four muscles on the front of your thigh. Their main function is to extend, or straighten, your knee, and they're involved in several important tasks of daily living, such as standing or sitting</span>
+						</div>
+                        <br>
+						<br>
+						<input type="checkbox" id="quadriceps" name="quadriceps" value="Quadriceps">
+                        <label span style= "background-color: rgba(17, 13, 16, 0.63);" for="quadriceps"> Select Muscle Group</label><br>
+                        
+					 </div>
+				</div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+					<div class="box-part text-center">
+                        
+                        <img src="https://miro.medium.com/max/500/1*AqDQQlSOeMlLaIvz0ueuSQ.jpeg"
+                        width="350"
+                        height="280">
+                        
+						<div class="title">
+							<h4>Hamstrings</h4>
+						</div>
+                        
+						<div class="text">
+							<span span style= "background-color: rgba(17, 13, 16, 0.63);">Hamstrings can extend the hip, like in deadlifts, back extensions, and good mornings. They can also flex the knee, like in leg curls and glute ham raises. Each hamstrings muscle can also slightly assist in things like rotation and stability.</span>
+						</div>
+                        <br>
+						<input type="checkbox" id="hamstrings" name="hamstrings" value="Hamstrings">
+                        <label span style= "background-color: rgba(17, 13, 16, 0.63);" for="hamstrings"> Select Muscle Group</label><br>
+                        
+					 </div>
+				</div>
+
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+					<div class="box-part text-center">
+                        
+                        <img src="https://i0.wp.com/altrinchamphysio.co.uk/wp-content/uploads/2018/02/glute-Strength-anatomy.png?fit=520%2C290"
+                        width="350"
+                        height="280">
+                        
+						<div class="title">
+							<h4>Glutes</h4>
+						</div>
+                        
+						<div class="text">
+							<span span style= "background-color: rgba(17, 13, 16, 0.63);">The gluteus medius and minimus muscles work together to promote hip abduction (the movement of the leg away from the body) and prevent hip adduction (the movement of the leg toward the body). They stabilize the hip and help us balance.</span>
+						</div>
+                        <br>
+						<input type="checkbox" id="glute" name="glute" value="Glutes">
+                        <label span style= "background-color: rgba(17, 13, 16, 0.63);" for="glute"> Select Muscle Group</label><br>
+                        
+					 </div>
+				</div>
+
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+					<div class="box-part text-center">
+                        
+                        <img src="https://marvel-b1-cdn.bc0a.com/f00000000041628/ix-cdn.b2e5.com/images/41628/41628_4d7bcffa446f416f8542fee1625260d0_1616757894.jpeg"
+                        width="350"
+                        height="280">
+                        
+						<div class="title">
+							<h4>Lower Back</h4>
+						</div>
+                        
+						<div class="text">
+							<span span style= "background-color: rgba(17, 13, 16, 0.63);">Muscles and ligaments, which provide strength and power while at the same time also providing support and stability. The muscles of the low back provide power and strength for activities such as standing, walking, and lifting.</span>
+						</div>
+                        <br>
+						<input type="checkbox" id="back" name="back" value="Lower Back">
+                        <label span style= "background-color: rgba(17, 13, 16, 0.63);" for="back"> Select Muscle Group</label><br>
+						<br>
+                        <br>
+					 </div>
+				</div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+					<div class="box-part text-center">
+                        
+                        <img src="https://images.squarespace-cdn.com/content/v1/5971537f6f4ca3d79d510efe/1588208842734-GC1DBVIKB2MLBZ9M8WJY/ke17ZwdGBToddI8pDm48kDu7nl872aRZ-Zhg2PuQ6Up7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1USruq7EV5OZoV7EMkO02j9ybEoay8OS8sZnGhJnCMaxR_K6tMI7MKwIA4sGsI6sOXQ/IMG_2057.jpeg"
+                        width="350"
+                        height="280">
+                        
+						<div class="title">
+							<h4>Latissimus Dorsi</h4>
+						</div>
+                        
+						<div class="text">
+							<span span style= "background-color: rgba(17, 13, 16, 0.63);">Your lat muscles play a big role in your upper body and activities that involve lifting. The lats muscles are linked to your ribs, spine, upper arm, and scapula. As a result, these muscles contribute a whole lot to how you rotate your arm and pull things toward you.</span>
+						</div>
+                        <br>
+						<input type="checkbox" id="lats" name="lats" value="Lats">
+                        <label span style= "background-color: rgba(17, 13, 16, 0.63);" for="lats"> Select Muscle Group</label><br>
+                        <br>
+                        <br>
+					 </div>
+				</div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+					<div class="box-part text-center">
+                        
+                        <img src="https://www.verywellhealth.com/thmb/NqyR0sGvNI5YX2bIyxlsWcAsFhk=/3646x2734/filters:fill(87E3EF,1)/GettyImages-147219941-56a05efe3df78cafdaa14c5f.jpg"
+                        width="350"
+                        height="280">
+                        
+						<div class="title">
+							<h4>Trapezius</h4>
+						</div>
+                        
+						<div class="text">
+							<span span style= "background-color: rgba(17, 13, 16, 0.63);">The trapezius muscle is a postural and active movement muscle, used to tilt and turn the head and neck, shrug, steady the shoulders, and twist the arms. The trapezius elevates, depresses, rotates, and retracts the scapula, or shoulder blade.</span>
+						</div>
+                        <br>
+                        <br>
+						<input type="checkbox" id="trapezius" name="trapezius" value="Traps">
+                        <label span style= "background-color: rgba(17, 13, 16, 0.63);" for="trapezius"> Select Muscle Group</label><br>
+                        
+					 </div>
+				</div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+					<div class="box-part text-center">
+                        
+                        <img src="https://cdn.britannica.com/13/125813-004-2ACB1107/Muscles-wall.jpg"
+                        width="350"
+                        height="280">
+                        
+						<div class="title">
+							<h4>Abdominals</h4>
+						</div>
+                        
+						<div class="text">
+							<span span style= "background-color: rgba(17, 13, 16, 0.63);">The abdominal muscles support the trunk, allow movement and hold organs in place by regulating internal abdominal pressure. The deep abdominal muscles, together with muscles in the back, make up your 'core' muscles and help keep your body stable and balanced, and protects your spine.</span>
+						</div>
+                        <br>
+						<input type="checkbox" id="abdominal" name="abdominal" value="Abdominals">
+                        <label span style= "background-color: rgba(17, 13, 16, 0.63);" for="abdominal"> Select Muscle Group</label><br>
+                        
+					 </div>
+				</div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+					<div class="box-part text-center">
+                        
+                        <img src="https://images.squarespace-cdn.com/content/v1/5b48d55c55b02c4d086a9285/1564014233704-IXMZI8218FBCVXCLC13E/ke17ZwdGBToddI8pDm48kKodO04mjx84Y0GseV0MjWBZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVHTi2tpnulPW1QAKdamRS3MGk2-s-N4GgMuT9ZNX9QGY-ePd61vvrnzhVs39GIczVc/chest-muscles.jpg"
+                        width="350"
+                        height="280">
+                        
+						<div class="title">
+							<h4>Pectorals</h4>
+						</div>
+                        
+						<div class="text">
+							<span span style= "background-color: rgba(17, 13, 16, 0.63);">The pectoralis major's primary functions are flexion, adduction, and internal rotation of the humerus. The pectoral major may colloquially be referred to as "pecs", "pectoral muscle" or "chest muscle" due to it being the largest and most superficial muscle in the chest area.</span>
+						</div>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="pectoral" name="pectoral" value="Pectorals">
+                        <label span style= "background-color: rgba(17, 13, 16, 0.63);" for="pectoral"> Select Muscle Group</label><br>
+                        
+                        
+					 </div>
+				</div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+					<div class="box-part text-center">
+                        
+                        <img src="https://blog.iafstore.com/static/embed/anatomia-muscolo-deltoide-spalla-en.jpg"
+                        width="350"
+                        height="280">
+                        
+						<div class="title">
+							<h4>Deltoids</h4>
+						</div>
+                        
+						<div class="text">
+							<span span style= "background-color: rgba(17, 13, 16, 0.63);"> Includes the front delt, rear delt and mid delt. These muscles help initial abduction from 0 to 15 degrees, but also provide stabilization to the glenohumeral joint when the deltoid works to abduct past 15 degrees.</span>
+						</div>
+                        <br><br>
+                        <input type="checkbox" id="deltoid" name="deltoid" value="Deltoids">
+                        <label span style= "background-color: rgba(17, 13, 16, 0.63);" for="deltoid"> Select Muscle Group</label><br>
+					 </div>
+				</div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+					<div class="box-part text-center">
+                        
+                        <img src="https://www.mz-store.com/blog/wp-content/uploads_en/2018/11/triceps1.jpg"
+                        width="350"
+                        height="280">
+                        
+						<div class="title">
+							<h4>Triceps</h4>
+						</div>
+                        
+						<div class="text">
+							<span span style= "background-color: rgba(17, 13, 16, 0.63);">The triceps brachii is a large, thick muscle on the dorsal part of the upper arm. It often appears as the shape of a horseshoe on the posterior aspect of the arm. The main function of the triceps is the extension of the elbow joint.</span>
+						</div>
+                        <br><br>
+                        <input type="checkbox" id="triceps" name="triceps" value="Triceps">
+                        <label span style= "background-color: rgba(17, 13, 16, 0.63);" for="triceps"> Select Muscle Group</label><br>
+                        
+					 </div>
+				</div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+					<div class="box-part text-center">
+                        
+                        <img src="https://cdn2.omidoo.com/sites/default/files/imagecache/full_width/images/bydate/20130412/shutterstock119687548copy.jpg"
+                        width="350"
+                        height="280">
+                        
+						<div class="title">
+							<h4>Biceps</h4>
+						</div>
+                        
+						<div class="text">
+							<span span style= "background-color: rgba(17, 13, 16, 0.63);">Primary functions of the biceps brachii is flexion of the elbow and supination of the forearm. In fact, it is the prime mover of forearm supination. Since it crosses the gleno-humeral joint, it also serves to assist shoulder elevation.</span>
+						</div>
+                        <br> 
+                        <input type="checkbox" id="biceps" name="biceps" value="Biceps">
+                        <label span style= "background-color: rgba(17, 13, 16, 0.63);" for="biceps"> Select Muscle Group</label><br>
+                        <br> 
+                        
+					 </div>
+				</div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+					<div class="box-part text-center">
+                        
+                        <img src="https://i.pinimg.com/originals/15/b6/3a/15b63abea80136b55fe1675879ba07fd.jpg"
+                        width="350"
+                        height="280">
+                        
+						<div class="title">
+							<h4>Forearms</h4>
+						</div>
+                        
+						<div class="text">
+							<span span style= "background-color: rgba(17, 13, 16, 0.63);">The muscles of the forearm or antebrachium work together to move the elbow, forearm, wrist, and digits of the hand. They fall into two categories: intrinsic and extrinsic muscles. The intrinsic muscles function to move the forearm by pronating and supinating the radius and ulna.</span>
+						</div>
+                        <br>
+                        <input type="checkbox" id="forearm" name="forearm" value="Forearms">
+                        <label span style= "background-color: rgba(17, 13, 16, 0.63);" for="forearm"> Select Muscle Group</label><br>
+                        
+					 </div>
+				</div>
+
+                <div class="col-lg-8 col-md-4 col-sm-4 col-xs-12">
+               
+					<div class="box-part text-center">
+                        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                           
+                       
+					 </div>
+				</div>
+                
+		
+		</div>		
+    </div>
+</div>
+
+
+</form>
+      
+{% endblock %}

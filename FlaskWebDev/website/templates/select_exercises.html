@@ -1,0 +1,140 @@
+{% extends "base.html" %} {% block title %}Select Exercise{% endblock %} {% block content
+    %}
+    <form style="color:white;" method="POST">
+    <br>
+    <h1 span style= "background-color: rgba(17, 13, 16, 0.63);" >Build your workout!</h1>
+    <br>
+
+        <div class="form-group">
+          <label span style= "background-color: rgba(17, 13, 16, 0.63);" for="text">Workout Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="W_name"
+            name="W_name"
+            placeholder="Enter workout name"
+          />
+        </div>
+  
+    <br>
+    
+
+
+    <html>
+        <head>
+        </head>
+        <body>
+   
+            <p span style= "background-color: rgba(17, 13, 16, 0.63);"> Select Workout Type. 
+            <input  type="radio" name = "W_type" value="Body Building"> Body Building 
+            <input type="radio" name = "W_type" value="Powerlifting"> Power Lifting </br>
+            </p>
+            <br>
+            
+  
+        </body>
+    </html>
+
+    
+    <html>
+        <head>
+        </head>
+        <body>
+ 
+            <p span style= "background-color: rgba(17, 13, 16, 0.63);"> Select Select Intensity. </br>
+            <input type="radio" name = "W_in" value="Beginner"> Beginner </br>
+            <input type="radio" name = "W_in" value="Intermediate"> Intermediate </br>
+            <input type="radio" name = "W_in" value="Advanced"> Advanced </br>
+          </p>
+            <br>
+            
+
+        </body>
+    </html>
+
+    <title>Checkboxes</title>
+    <style>
+        .multiselect {
+          width: 200px;
+        } 
+
+        .selectBox {
+          position: relative;
+        }
+
+        .selectBox select {
+          width: 100%;
+          font-weight: bold;
+        }
+
+        .overSelect {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+        }
+
+
+
+
+        #checkboxes {
+          display: inline-block;
+          border: 1px #dadada solid;
+          margin-bottom: 0; /* I added this after I posted my reply */
+          vertical-align: middle; /* Fixes any weird issues in Firefox and IE */
+        }
+
+        #checkboxes label {
+            display: inline-block;
+
+        }
+        #checkboxes label:hover {
+          background-color: #1e90ff;
+        }
+    </style>
+
+
+
+        <div class="multiselect">
+          <div class="selectBox" onclick="showCheckboxes()">
+            <select >
+              <option>Select exercise options</option>
+            </select>
+            <div class="overSelect"></div>
+          </div>
+          <div span style= "background-color: rgba(17, 13, 16, 0.63);" id="checkboxes">
+
+            {% for i in session['exe'] %}
+            <input type="checkbox" id="id_{{i}}" name="exercises" value="{{i}}">
+            <label for="id_{{i}}">{{i}}</label>
+            <br>
+            {% endfor %}
+
+            
+          </div>
+        </div>
+     
+    
+
+
+      <script>
+          var expanded = false;
+
+            function showCheckboxes() {
+            var checkboxes = document.getElementById("checkboxes");
+            if (!expanded) {
+                checkboxes.style.display = "block";
+                expanded = true;
+            } else {
+                checkboxes.style.display = "none";
+                expanded = false;
+            }
+            }
+      </script>
+
+<br>
+<button type="submit" class="btn btn-primary">Submit</button>
+<br><br><br>
+</form>
+  {% endblock %}

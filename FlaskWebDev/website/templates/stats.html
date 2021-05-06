@@ -1,0 +1,39 @@
+{% extends "base.html" %} {% block title %}Stats{% endblock %} {% block content
+    %}
+    <form style="color:white;" method="POST">
+      <h3 align="center">Stats</h3>
+      <div class="form-group">
+        <label for="age">User Age</label>
+        <input
+          type="number"
+          class="form-control"
+          id="age"
+          name="age"
+          placeholder="Enter age"
+        />
+      </div>
+      <div class="form-group">
+        <label for="height">User Height</label>
+        <input
+          type="number"
+          class="form-control"
+          id="height"
+          name="height"
+          placeholder="Enter height in CM"
+        />
+      </div>
+      <div class="form-group">
+        <label for="weight">User Weight</label>
+        <input
+          type="number"
+          class="form-control"
+          id="weight"
+          name="weight"
+          placeholder="Enter weight in KG"
+        />
+      </div>
+      <br />
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    {% endblock %}
+    
